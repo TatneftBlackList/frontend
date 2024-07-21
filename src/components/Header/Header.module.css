@@ -1,0 +1,87 @@
+.header{
+    position: relative;
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: space-between;
+
+
+    align-items: center;
+    padding: 30px 100px ;
+    border-radius: 8px;
+
+
+    -webkit-box-shadow: -6px 3px 13px 13px rgba(9, 9, 9, 0.28);
+    -moz-box-shadow: -6px 3px 13px 13px rgba(9, 9, 9, 0.28);
+    box-shadow: -6px 3px 13px 13px rgba(9, 9, 9, 0.28);
+
+}
+.logo{
+    position: absolute;
+    left: 500px;
+   bottom: -45px;
+    width: 300px;
+    height: 300px;
+}
+/*.logo__title{*/
+/*    color: grey;*/
+/*}*/
+/*.logo__title:hover{*/
+/*    color: #fff;*/
+/*}*/
+/*.logo__title:before{*/
+/*    transition: .3s, translate 0s .3s;*/
+/*}*/
+
+.logo__title{
+    color: black;
+}
+.sign{
+    position: relative;
+    color: black;
+}
+
+.sign:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 14px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+
+}
+
+.sign:hover:after{
+
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.sign:hover,
+.logo__title:hover{
+    color: black;
+}
+.user__card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px 24px;
+
+}
+.button__box{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.button__close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
